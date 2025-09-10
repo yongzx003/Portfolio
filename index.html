@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Inter|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+        emailjs.init("w_BH_EybJV3C6nNnc"); // replace with your Public Key
+    })();
+    </script>
+</head>
+
+<!-- Custom Alert Box -->
+<div id="custom-alert" class="custom-alert hidden">
+  <span id="alert-message"></span>
+  <button onclick="closeAlert()">✖</button>
+</div>
+
+
+<body> 
+    <!-- Navbar -->
+    <header>
+        <div class="container">
+            <div class="logo">Portfolio</div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#sectors">Interested Sectors</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+            
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-text">
+                <h3>Hello It’s Me</h3>
+                <h1>Yong Zhen Xing</h1>
+                <h2>And I’m a <span class="highlight" id="typing"></span></h2>
+                <p>
+                On a mission to bridge human creativity with Artificial Intelligence, building smarter software for a better tomorrow.
+                </p>
+
+                <!-- Social Icons -->
+                <div class="social-icons">
+                <a href="https://www.linkedin.com/in/zhen-xing-yong-8b380126b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <!--<a href="https://your-wechat-link" target="_blank"><i class="fab fa-weixin"></i></a>-->
+                <a href="https://www.instagram.com/xyzxzyyzxyxzzxyzyx" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/601110900962" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+
+                <!-- Button -->
+                <a href="pdf/Resume - Yong Zhen Xing.pdf" download class="btn">Download CV</a>
+            </div>
+            <!-- Profile Image -->
+            <div class="hero-image">
+                <div class="circle"></div>
+                <img src="images/image.png" alt="Profile Picture" class="profile-pic">
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-container">
+                <!-- Profile with glowing halo -->
+                <div class="profile-pic2">
+                <img src="images/image.png" alt="Profile Picture">
+                </div>
+
+                <!-- About text -->
+                <div class="about-text">
+                <h2>About <span>Me</span></h2>
+                <h3>AI Fresh Graduate</h3>
+                <p>
+                    I am a recent Artificial Intelligence graduate from Asia Pacific University, 
+                    passionate about applying my AI knowledges such as machine learning, deep learning, and NLP to real-world challenges. 
+                    My experience includes projects such as an AI-powered emotional assistant, esports match prediction models, 
+                    and reinforcement learning agents. Alongside strong technical skills in Python and TensorFlow, 
+                    I bring teamwork, communication, and leadership abilities, with a commitment to continuous learning and innovation.
+                </p>
+                <a href="pdf/Cover Letter - Yong Zhen Xing.pdf" download class="btn">See More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Interested Sectors Section -->
+    <section class="sectors" id="sectors">
+        <div class="container">
+            <h2>Interested <span>Sectors</span></h2>
+            <div class="sectors-container">
+                
+                 <!-- Example Card 1 -->
+                <div class="sector-card">
+                <div class="icon-circle">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Artificial Intelligence</h3>
+                <p>Exploring AI solutions for automation, decision-making, and intelligent systems.</p>
+                </div>
+
+                <!-- Example Card 2 -->
+                <div class="sector-card">
+                <div class="icon-circle">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Software Development</h3>
+                <p>Building robust, scalable, and user-friendly applications across platforms.</p>
+                </div>
+
+                <!-- Example Card 3 -->
+                <div class="sector-card">
+                <div class="icon-circle">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Deep Learning</h3>
+                <p>Developing neural networks for advanced problem-solving and data insights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>Academic <span>Projects</span></h2>
+        <div class="projects-container">
+            
+            <div class="project-card" data-link="https://github.com/yongzx003/fyp">
+                <img src="images/project1.png" alt="Project 1">
+                <div class="overlay">
+                    <h3>Project 1</h3>
+                    <p>💡EMOCARE: An AI assistant that understands your emotions and offers personalized, stigma-free support anytime. 🌱💬</p>
+                    <div class="icons">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card coming-soon">
+                <img src="images/project2.png" alt="Project 2">
+                <div class="overlay">
+                    <h3>Project 2</h3>
+                    <p>To be updated soon...</p>
+                    <span class="badge">Coming Soon</span>
+                    <div class="icons">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card coming-soon">
+                <img src="images/project3.png" alt="Project 3">
+                <div class="overlay">
+                    <h3>Project 3</h3>
+                    <p>To be updated soon...</p>
+                    <span class="badge">Coming Soon</span>
+                    <div class="icons">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card coming-soon">
+                <img src="images/project4.png" alt="Project 4">
+                <div class="overlay">
+                    <h3>Project 4</h3>
+                    <p>To be updated soon...</p>
+                    <span class="badge">Coming Soon</span>
+                    <div class="icons">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card coming-soon">
+                <img src="images/project5.png" alt="Project 5">
+                <div class="overlay">
+                    <h3>Project 5</h3>
+                    <p>To be updated soon...</p>
+                    <span class="badge">Coming Soon</span>
+                    <div class="icons">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card coming-soon">
+                <img src="images/project6.png" alt="Project 6">
+                <div class="overlay">
+                    <h3>Project 6</h3>
+                    <p>To be updated soon...</p>
+                    <span class="badge">Coming Soon</span>
+                    <div class="icons">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+    <div class="container">
+        <h2>Contact <span>Me!</span></h2>
+
+        <form class="contact-form">
+        <div class="row">
+            <div class="field">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="field phone-field">
+                <label for="tel">Mobile Number:</label>
+                <div class="phone-input">
+                    <select id="country-code" name="country-code">
+                    <option value="+60" selected>🇲🇾 +60</option>
+                    <option value="+65">🇸🇬 +65</option>
+                    <option value="+86">🇨🇳 +86</option>
+                    <option value="+886">🇹🇼 +886</option>
+                    <option value="+44">🇬🇧 +44</option>
+                    <option value="+1">🇺🇸 +1</option>
+                    <option value="+61">🇦🇺 +61</option>
+                    <option value="other">🌍 Other</option>
+                    </select>
+                    <input type="text" id="custom-code" name="custom-code" placeholder="+XX" style="display:none; width:70px;">
+                    <input type="tel" id="tel" name="tel">
+                </div>
+            </div>
+
+
+            <div class="field">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="message">Your Message:</label>
+            <textarea id="message" rows="6"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+    </section>
+
+
+
+
+    <script src="../script.js"></script>
+
+</body>
+</html>
