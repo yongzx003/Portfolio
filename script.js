@@ -117,7 +117,7 @@ const navLinks = document.querySelectorAll("header nav a");
 window.addEventListener("scroll", () => {
   let current = "";
   sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 80;
+    const sectionTop = section.offsetTop - 200;
     if (pageYOffset >= sectionTop) {
       current = section.getAttribute("id");
     }
@@ -174,3 +174,7 @@ if (this.value === "other") {
     customCode.value = ""; // clear when hidden
 }
 });
+
+
+
+
