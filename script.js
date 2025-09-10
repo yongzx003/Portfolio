@@ -29,11 +29,6 @@ function eraseRole() {
 document.addEventListener("DOMContentLoaded", typeRole);
 
 
-document.querySelector(".about-text .btn").addEventListener("click", (e) => {
-  e.preventDefault();
-  window.open("docs/YongZhenXing_CoverLetter.pdf", "_blank");
-});
-
 // =========================
 // Projects → GitHub Links
 // =========================
